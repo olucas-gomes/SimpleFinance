@@ -48,8 +48,26 @@ while True:
                     print("Dados adicionados com sucesso!")
                 case 2:
                     pass
-                case 3:
-                    pass
+                case 3
+                    if info_users == []:
+                        print("Nenhum registro cadastrado")
+                    else:
+                        for user in info_users:
+                            income = user[0]
+                            expenses = user[1]
+                            economy_month = user[2]
+
+                            print()
+                            print("Renda mensal:", income)
+                            print("Despesas mensais:", expenses)
+                            print("Economia mensal:", economy_month)
+
+                            if economy_month > 0:
+                                print("Situação: dentro do orçamento")
+                            elif economy_month == 0:
+                                print("Situação: orçamento equilibrado")
+                            else:
+                                print("Situação: acima do orçamento")
                 case 4:
                     pass
                 case 5:
